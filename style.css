@@ -66,7 +66,7 @@ a{
     text-align: center;
     height: 400px;
     padding: 70px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.416)), url(images/cup-coffee-1100x733.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.416)), url(images/homepagebgstock.png);
     background-size: cover;
     transition: ease 0.5s;
 }
@@ -86,6 +86,7 @@ a{
     margin-top: 20px;
     border: none;
     padding: 11px;
+    color: #000;
     border-radius: 15px;
     font-family: 'Plus Jakarta Sans';
     transition: ease 0.3s;
