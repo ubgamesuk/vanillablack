@@ -1,0 +1,200 @@
+@import url('link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet');
+    .plus-jakarta-sans {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet');
+    .prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+:root{
+    --sidebar-color: #0f0f0f;
+    --primary-color: #171717;
+    --primary-color-light: #3e3e3e;
+    --toggle-color: #fff;
+    --text-color: #ffffff;
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: translatey(-60px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+@keyframes navigationSlide {
+    0% {
+      transform: translatey(-60px);
+      opacity: 0;
+    }
+    100% {
+      transform: translatey(-3px);
+    }
+  }
+body{
+    background-color: #f3f3f3;
+}
+.content{
+    margin: 30px;
+}
+.page{
+    margin-top: 80px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.banner{
+    text-align: center;
+    height: 400px;
+    padding: 70px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.416)), url(images/cup-coffee-1100x733.jpg);
+    background-size: cover;
+    transition: ease 0.5s;
+}
+.banner .bannercontent{
+    animation: s ease-out 0s 1 slideInFromLeft;
+}
+.banner .bannertext{
+    font-size: 50px;
+    color: #fff;
+    line-height: 60px;
+    font-family: 'Prata';
+    font-weight: 500;
+    transition: ease 0.5s;
+}
+.banner .bannerbutton{
+    font-size: 25px;
+    margin-top: 20px;
+    border: none;
+    padding: 11px;
+    border-radius: 15px;
+    font-family: 'Plus Jakarta Sans';
+    transition: ease 0.3s;
+}
+.banner .bannerbutton:hover{
+    outline: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+}
+.banner .bannerbutton i{
+    transform: translateY(2px);
+    margin-left: 10px;
+}
+.navigationmenu{
+    background-color: #876841;
+    position: fixed;
+    height: 230px;
+    padding: 20px;
+    width: 100%;
+    animation: navigationSlide ease 0.4s;
+    animation-fill-mode: forwards;
+}
+.navigationmenu .navitem{
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    transform: translateY(15px);
+}
+.navigationmenu .navitemactive{
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transform: translateY(15px);
+}
+.topbar{
+    transform: translateY(-80px);
+    height: 80px;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    text-align: center;
+    background-color: #fff;
+}
+.topbar .toplogo{
+    height: 100%;
+    padding: 7px;
+    cursor: pointer;
+}
+.topbar .menuicon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 15px;
+    margin-right: 25px;
+    font-size: 40px;
+    color: #9a6100;
+}
+.footer{
+    padding: 30px;
+    background-color: #fff;
+}
+.footer .footerlogo{
+    height: 25px;
+    transform: translateX(-3px);
+    margin-bottom: 10px;
+}
+.footer i{
+    font-size: 25px;
+    transform: translateY(4px);
+    margin-right: 10px;
+}
+.footer a{
+    text-decoration: none;
+    color: #000;
+}
+.subtitle{
+    font-size: 29px;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 20px;
+}
+h2{
+    margin-top: 5px;
+    font-size: 23px;
+    font-weight: 400;
+}
+.map{
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+@media screen and (min-width: 600px) {
+    .banner{
+        height: 350px;
+    }
+    .banner .bannercontent{
+        margin-top: 20px;
+    }
+    .banner .bannertext{
+        font-size: 70px;
+        line-height: 78px;
+    }
+}

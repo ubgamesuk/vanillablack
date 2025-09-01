@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <title>Our Menu | VanillaBlack Cramlington</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav class="topbar">
+        <img onclick="document.location='.'" class="toplogo" src="images/VanillaBlack.png">
+        <div class="menuicon">
+            <i onclick="openNavigation()" class="bx bx-menu"></i>
+        </div>
+        <div style="display: none;" id="navmenu" class="navigationmenu">
+            <div onclick="document.location='.'" class="navitem">Home</div>
+            <hr>
+            <div onclick="document.location='../menu'" class="navitemactive">Menu and Specials</div>
+            <hr>
+            <div onclick="document.location='../contact'" class="navitem">Contact Us</div>
+        </div>
+    </nav>
+    <section class="page"></section>
+    <div style="transform: translateY(20px);" class="content">
+        <h1 class="subtitle">Our Menu</h1>
+        <p>Menu coming soon!
+        </p>
+        <br>
+    </div>
+
+    <nav style="position: absolute; bottom: 0; width: 100%;" class="footer">
+        <img class="footerlogo" src="images/VanillaBlacktext.png">
+
+        <h1>Contact us</h1>
+        <a href="mailto:vanillablackltd@gmail.com">
+            <h2 style="cursor: pointer;"><i class='bx bx-envelope'></i>vanillablackltd@gmail.com</h2>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61579605752394">
+            <h2><i class='bx bxl-facebook-square' ></i>Vanilla Black Ltd</h2>
+        </a>
+        <br>
+        <hr>
+        <br>
+        <h2>©2025 Vanilla Black Ltd</h2>
+    </nav>
+    </section>
+    
+</body>
+</html>
